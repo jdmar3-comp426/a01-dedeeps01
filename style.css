@@ -84,8 +84,7 @@ html, body {
     margin-right: 0px;
   }
   
-  .nav ul li {
-    color: #000;
+li {
     font-family: 'Montserrat', sans-serif;
     display: inline-block; 
     height: 80px;
@@ -94,6 +93,12 @@ html, body {
     padding: 0 10px;
     transition: background .5s; 
   }
+
+li a {
+    color: #000;
+    text-decoration: none;
+
+}
   
   .btn:hover {
     background: rgb(204, 204, 204);
@@ -101,7 +106,7 @@ html, body {
     transition: background .5s;  
   }
   
-  .nav ul li:hover{
+ li a:hover{
     cursor: pointer; 
     transition: background .5s;  
     color: #e72910;
@@ -152,20 +157,18 @@ html, body {
   }
   
   footer ul li {
-    color: #000;
-    font-family: 'Montserrat', sans-serif;
-    display: inline-block; 
-    height: 80px;
-    line-height: 80px; 
-    list-style: none;
-    padding: 0 10px;
     text-align: right;
   }
   
-  footer ul li:hover{
+  footer ul li:hover {
     color: #e72910;
     cursor: pointer; 
     transition: .5s;
+  }
+
+  .footer_left {
+    font-size: 10px;
+    float: left;
   }
   
   @media (max-width: 500px) {
